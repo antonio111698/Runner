@@ -105,6 +105,14 @@ play-services-maps = { group = "com.google.android.gms", name = "play-services-m
 google-maps-android-utils-ktx = { module = "com.google.maps.android:maps-utils-ktx", version.ref = "mapsUtils"}
 annotation = { group = "androidx.annotation", name = "annotation", version.ref = "annotation" }
 
+#Gradle
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp"}
+android-tools-common = { group = "com.android.tools", name = "common", version.ref = "androidTools"}
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin"}
+ksp-gradlePlugin = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin",version.ref = "ksp"}
+room-gradlePlugin= { group = "androidx.room", name = "room-gradle-plugin", version.ref = "room"}
+
+
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
@@ -115,3 +123,6 @@ room = { id = "androidx.room", version.ref = "room" }
 org-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "org-jetbrains-kotlin-jvm" }
 androidDynamicFeature = { id = "com.android.dynamic-feature", version.ref = "agp" }
 mapsplatform-secrets-plugin = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secretsPlugin"}
+
+runner-android-application = {  id = "runner.android.application", version = "unspecified"}
+runner-android-application-compose = {  id = "runner.android.application.compose", version = "unspecified"}

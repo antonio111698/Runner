@@ -22,5 +22,29 @@ gradlePlugin{
             id = "runner.android.application.compose"
             implementationClass = "AndroidApplicationComposeConventionPlugin"
         }
+        register("androidLibrary"){
+            id = "runner.android.library"
+            implementationClass = "AndroidLibraryConventionPlugin"
+        }
+        register("androidLibraryCompose"){
+            id = "runner.android.library.compose"
+            implementationClass = "AndroidLibraryComposeConventionPlugin"
+        }
+        register("androidFeatureUi"){
+            id = "runner.android.feature.ui"
+            implementationClass = "AndroidFeatureUiConventionPlugin"
+        }
+        register("androidRoom"){
+            id = "runner.android.room"
+            implementationClass = "AndroidRoomConventionPlugin"
+        }
+        register("jvmLibrary"){
+            id = "runner.jvm.library"
+            implementationClass = "JvmLibraryConventionPlugin"
+        }
+        register("jvmKtor"){
+            id = "runner.jvm.ktor"
+            implementationClass = "JvmKtorConventionPlugin"
+        }
     }
 }

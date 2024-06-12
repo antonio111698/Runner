@@ -20,7 +20,8 @@ val DarkColorScheme = darkColorScheme(
     onPrimary = RunnerBlack,
     onBackground = RunnerWhite,
     onSurface = RunnerWhite,
-    onSurfaceVariant = RunnerGray
+    onSurfaceVariant = RunnerGray,
+    onError = RunnerDarkRed
 )
 
 @Composable

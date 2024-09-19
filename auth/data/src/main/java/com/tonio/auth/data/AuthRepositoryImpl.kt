@@ -1,0 +1,21 @@
+package com.tonio.auth.data
+
+import com.tonio.auth.domain.AuthRepository
+import com.tonio.core.data.networking.post
+import com.tonio.core.domain.util.DataError
+import com.tonio.core.domain.util.EmptyResult
+import io.ktor.client.HttpClient
+
+class AuthRepositoryImpl(
+    private val httpClient: HttpClient
+): AuthRepository{
+    override suspend fun register(email: String, password: String): EmptyResult<DataError.Network> {
+        return httpClient.post<RegisterRequest,Unit>(
+            route = "/register",
+            body = RegisterRequest(
+                email = email,
+                password = password
+            )
+        )
+    }
+}
